@@ -1,9 +1,12 @@
 pipeline {
     agent any
+
+    tools { nodejs "node" }
+
     stages {
         stage('Cloning Git') {
             steps {
-                git 'https://github.com/ormauda/turborepo.git'
+                git branch: 'main', url: 'https://github.com/ormauda/turborepo.git'
             }
         }
         stage('Install') {
