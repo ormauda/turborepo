@@ -16,6 +16,7 @@
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
+  "packageManager": "pnpm@6.25.1",
   "turbo": {
     "pipeline": {
       "build": {
